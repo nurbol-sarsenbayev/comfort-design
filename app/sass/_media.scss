@@ -18,6 +18,10 @@
 		padding-top: 83px;
 	}
 
+	.block {
+		padding: 15px 30px 20px;
+	}
+
 	.header {
 		padding: 10px 0;
 		position: fixed;
@@ -79,6 +83,16 @@
 		}
 	}
 
+	.footer {
+		&-left {
+			width: 145px;
+		}
+
+		.logo-text {
+			display: none;
+		}
+	}
+
 	.owl-carousel {
 		.owl {	
 			&-prev {
@@ -120,6 +134,19 @@
 			.block {
 				margin-top: 100px;
 			}
+		}
+	}
+
+	.footer {
+		&-container {
+			display: block;
+			&>div {
+				margin-bottom: 20px;
+			}
+		}
+
+		&-right {
+			display: block;
 		}
 	}
 

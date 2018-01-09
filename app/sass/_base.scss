@@ -80,7 +80,22 @@ img {
 	cursor: pointer;
 
 	&:hover {
-		color: #ddd;
+		background-image: -moz-linear-gradient( 3deg, rgb(40,157,210) 0%, rgb(88,189,235) 100%);
+		background-image: -webkit-linear-gradient( 3deg, rgb(40,157,210) 0%, rgb(88,189,235) 100%);
+		background-image: -ms-linear-gradient( 3deg, rgb(40,157,210) 0%, rgb(88,189,235) 100%);
+	}
+
+	.inverse & {
+		background-image: -moz-linear-gradient( 3deg, rgb(254,254,254) 0%, rgb(226,226,226) 100%);
+		background-image: -webkit-linear-gradient( 3deg, rgb(254,254,254) 0%, rgb(226,226,226) 100%);
+		background-image: -ms-linear-gradient( 3deg, rgb(254,254,254) 0%, rgb(226,226,226) 100%);
+		color: $default_text_color;		  
+
+		&:hover {
+			background-image: -moz-linear-gradient( 3deg, rgb(226,226,226) 0%, rgb(254,254,254) 100%);
+			background-image: -webkit-linear-gradient( 3deg, rgb(226,226,226) 0%, rgb(254,254,254) 100%);
+			background-image: -ms-linear-gradient( 3deg, rgb(226,226,226) 0%, rgb(254,254,254) 100%);
+		}
 	}
 }
 
@@ -88,6 +103,10 @@ img {
 	display: inline-block;
 	padding: 30px 60px;
 	background-color: #fff;
+
+	.inverse & {
+		background-color: transparent;
+	}
 
 	&-title {
 		font-weight: 600;
@@ -118,32 +137,10 @@ img {
 			margin-bottom: 0;
 		}
 	}
-
-	&-circle {
-		li {
-			&:before {
-				display: inline-block;
-				content: '•';
-				margin-right: 5px;
-			}
-		}
-	}
 }
 
 .inverse {
 	color: #fff;
-}
-
-.overlay {
-	&:before {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		content: '';
-		background-color: rgba(0, 0, 0, 0.349);
-	}
 }
 
 .container {
@@ -183,6 +180,12 @@ img {
 	height: 43px;
 	line-height: 43px;
 	width: 170px;
+	background-color: transparent;
+
+	.inverse & {
+		color: #fff;
+		border-color: #fff;
+	}
 	
 	&.error {
 		border-color: red;
@@ -211,6 +214,30 @@ img {
 	&:-ms-input-placeholder {
 		color: #868585;
 		opacity: 1;
+	}
+
+	.inverse &::-webkit-input-placeholder {
+		color: #fff;
+	}
+	
+	.inverse &::-moz-placeholder {
+		color: #fff;
+	}
+	
+	.inverse &:-ms-input-placeholder {
+		color: #fff;
+	}
+
+	&.error::-webkit-input-placeholder {
+		color: red;
+	}
+	
+	&.error::-moz-placeholder {
+		color: red;
+	}
+	
+	&.error:-ms-input-placeholder {
+		color: red;
 	}
 }
 
