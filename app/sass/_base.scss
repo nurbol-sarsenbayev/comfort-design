@@ -103,9 +103,30 @@ img {
 	display: inline-block;
 	padding: 30px 60px;
 	background-color: #fff;
+	text-align: center;
 
 	.inverse & {
 		background-color: transparent;
+		padding: 40px 30px;
+	}
+
+	&-border {
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	.section-right &-border {
+		background-image: url('../img/border-right.png');
+	}
+
+	.section-left &-border {
+		background-image: url('../img/border-left.png');
+	}
+
+	&-main-title {
+		font-weight: bold;
+		font-size: 20px;
+		margin-bottom: 5px;
 	}
 
 	&-title {
@@ -152,20 +173,33 @@ img {
 		&-prev, &-next {
 			position: absolute;
 			top: 50%;
-			width: 28px;
-			height: 54px;
-			margin-top: -27px;
-			background-size: 100% 100%;
+			width: 40px;
+			height: 40px;
+			background-color: #e2e4eb;
+			text-align: center;
+			line-height: 40px;
+			margin-top: -20px;
+
+			&:before {
+				font-family: 'FontAwesome';
+				font-size: 30px;
+				display: block;	
+				color: $accent;
+			}
 		}
 
 		&-prev {
-			background: url('../img/arrow-prev.png');
-			left: 100px;
+			left: 0px;
+			&:before{
+				content: "\f104";
+			}
 		}
 
 		&-next {
-			background: url('../img/arrow-next.png');
-			right: 100px;
+			right: 0px;
+			&::before {
+				content: "\f105";
+			}
 		}
 	}
 }
@@ -183,7 +217,7 @@ img {
 	background-color: transparent;
 
 	.inverse & {
-		color: #fff;
+		color: #115b7e;
 		border-color: #fff;
 	}
 	
@@ -217,15 +251,15 @@ img {
 	}
 
 	.inverse &::-webkit-input-placeholder {
-		color: #fff;
+		color: #115b7e;
 	}
 	
 	.inverse &::-moz-placeholder {
-		color: #fff;
+		color: #115b7e;
 	}
 	
 	.inverse &:-ms-input-placeholder {
-		color: #fff;
+		color: #115b7e;
 	}
 
 	&.error::-webkit-input-placeholder {
@@ -340,7 +374,6 @@ img {
 	border-width: 7px;
 	border-color: rgb(226, 228, 235);
 	border-style: solid;
-	// width: 326px;
 	min-height: 200px;
 	display: flex;
 	flex-flow: column;

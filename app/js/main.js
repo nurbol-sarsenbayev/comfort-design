@@ -20,10 +20,6 @@ $(function() {
         $(".aksessuar").equalHeights();
     });
 
-    
-    
-
-
     $wnd.scroll(function() { onscroll(); });
 
     var menuTop = $menu.offset().top;
@@ -136,35 +132,55 @@ $(function() {
         }
     });    
 
-    $(".carousel-ekskursia").owlCarousel({
-        items: 1,
-        nav: true,
-        dots: true,
-        loop: true,
-        smartSpeed: 500,
-        margin: 0,
-        autoplay: true,
-        autoplayHoverPause: true,
-        autoplayTimeout: 2000,
-        navText: ['', '']
-    });
-
-    $(".carousel-doctor").owlCarousel({
-        items: 3,
+    $(".carousel-team").owlCarousel({
+        items: 5,
         nav: true,
         dots: false,
         loop: true,
         smartSpeed: 500,
         margin: 0,
-        // stagePadding: 30,
-        // autoplay: true,
-        autoplayHoverPause: true,
-        autoplayTimeout: 2000,
+        navText: ['', ''],
+        onChanged: function(e) {
+            setTimeout(function() {
+                $(".carousel-team .owl-item").removeClass("scale-1 scale-2 scale-3");
+                var items = $(".carousel-team .owl-item.active");
+                if(items.length == 5) {
+                    items.each(function(i, item) {
+                        if(i == 0 || i == 4) $(item).addClass("scale-1");
+                        if(i == 1 || i == 3) $(item).addClass("scale-2");
+                        else $(item).addClass("scale-3");                        
+                    });
+                } 
+                else if(items.length == 3) {
+                    items.each(function(i, item) {
+                        if(i == 0 || i == 2) $(item).addClass("scale-2");
+                        else $(item).addClass("scale-3");                        
+                    });
+                }
+            }, 100);
+        },
+        responsive: {
+            0: { items: 1 },
+            768: { items: 2 },        
+            992: { items: 3 },
+            1200: { items: 5 }        
+        },
+    });
+
+    $(".carousel-certificate").owlCarousel({
+        nav: true,
+        dots: false,
+        loop: true,
+        smartSpeed: 500,
+        margin: 30,
+        itemsScaleUp:true,
         navText: ['', ''],
         responsive: {
             0: { items: 1 },
-            768: { items: 2 },
-            1200: { items: 3 }          
+            480: { items: 2 },
+            768: { items: 3 },        
+            992: { items: 4, margin: 50 },
+            1200: { items: 4, margin: 100 }        
         },
     });
 
