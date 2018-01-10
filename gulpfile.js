@@ -32,6 +32,7 @@ gulp.task('libs-js', function() {
         'app/libs/owl.carousel/owl.carousel.js',
         'app/libs/jquery.maskedinput/jquery.maskedinput.js',
         'app/libs/equalheights/equalHeights.js',        
+        'app/libs/owl.carousel2.thumbs/owl.carousel2.thumbs.min.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify()) // Минимизировать весь js (на выбор)
