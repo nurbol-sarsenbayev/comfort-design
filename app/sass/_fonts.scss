@@ -20,6 +20,10 @@
 @include font-face("Lato", "../fonts/Lato/BlackItalic/Lato-BlackItalic", 900, "italic");
 
 
+@include font-face("Comforta", "../fonts/Comfortaa/Bold/Comfortaa-Bold", "bold");
+@include font-face("Ubuntu", "../fonts/Ubuntu/Regular/Ubuntu-Regular");
+
+
 @include font-face("Montserrat", "../fonts/Montserrat/Thin/Montserrat-Thin", 100);
 @include font-face("Montserrat", "../fonts/Montserrat/ThinItalic/Montserrat-ThinItalic", 100, "italic");
 @include font-face("Montserrat", "../fonts/Montserrat/ExtraLight/Montserrat-ExtraLight", 200);

@@ -18,7 +18,7 @@ var gulp           = require('gulp'),
 
 gulp.task('main-js', function() {
     return gulp.src([
-        'app/js/main.js',        
+        'app/js/main.js',     
     ])
     .pipe(concat('main.min.js'))
     .pipe(uglify()) // Минифицирует js
@@ -29,10 +29,14 @@ gulp.task('main-js', function() {
 gulp.task('libs-js', function() {
     return gulp.src([
         'app/libs/jquery/jquery.js',
-        'app/libs/owl.carousel/owl.carousel.js',
+        'app/libs/owl.carousel/owl.carousel.js',        
+        'app/libs/owl.carousel2.thumbs/owl.carousel2.thumbs.js',   
         'app/libs/jquery.maskedinput/jquery.maskedinput.js',
         'app/libs/equalheights/equalHeights.js',        
-        'app/libs/owl.carousel2.thumbs/owl.carousel2.thumbs.min.js'
+        'app/libs/microplugin/microplugin.js',
+        'app/libs/sifter/sifter.js',
+        'app/libs/selectize/selectize.js',
+        'app/libs/fancybox/jquery.fancybox.min.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify()) // Минимизировать весь js (на выбор)
@@ -76,8 +80,13 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'libs-js', 'main-js'], fun
 
     var buildFiles = gulp.src([
         'app/*.html',
+        'app/*.php',
         'app/.htaccess',
     ]).pipe(gulp.dest('dist'));
+
+    var buildVideos = gulp.src([
+        'app/videos/*'
+    ]).pipe(gulp.dest('dist/videos'));
 
     var buildCss = gulp.src([
 		'app/css/libs.min.css',

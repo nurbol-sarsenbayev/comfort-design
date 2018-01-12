@@ -179,6 +179,8 @@ img {
 			text-align: center;
 			line-height: 40px;
 			margin-top: -20px;
+			border: 0;
+			outline: 0;
 
 			&:before {
 				font-family: 'FontAwesome';
@@ -206,7 +208,7 @@ img {
 
 .input, .textarea {
 	font-size: 13px;
-	color: #868585;
+	color: $default_text_color;
 	border: 0;
 	border-bottom: 2px solid #9a9a9a;
 	outline: 0;
@@ -215,6 +217,7 @@ img {
 	line-height: 43px;
 	width: 170px;
 	background-color: transparent;
+	text-align: center;
 
 	.inverse & {
 		color: #115b7e;
@@ -275,6 +278,34 @@ img {
 	}
 }
 
+.selectize-control.single {
+
+	.selectize-input {
+		cursor: pointer;
+		box-shadow: none;
+		border-radius: 0;
+		border: 0;
+		border-bottom: 2px solid $accent;
+		color: $default_text_color;
+
+		input {
+			cursor: pointer;
+		}
+	}
+
+	.selectize-dropdown [data-selectable] .highlight {
+		border-radius: 0;
+		background: transparent;
+	}
+
+	.item {
+		border: 0;
+		background-color: #fff;
+		padding: 0;
+		margin: 0;
+	}
+}
+
 .modal {
 	position: fixed;
 	z-index: 100;
@@ -298,7 +329,7 @@ img {
 		border-color: $blue;
 		border-style: solid;
 		box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.26);
-		width: 600px;
+		width: 800px;
 		max-width: 100%;
 		max-height: 100vh;
 		overflow: auto;
@@ -318,15 +349,15 @@ img {
 		cursor: pointer;
 		top: 10px;
 		right: 10px;
-		width: 16px;
-		height: 16px;
-		background: url('../img/close.png');
-		
-		&.small {
-			width: 9px;
-			height: 9px;
-			background: url('../img/close-small.png');
+
+		&:before {
+			content: "\f00d";
+			font-family: FontAwesome;
+			color: #a5a7ac;
+			font-size: 25px;
+			font-style: normal;
 		}
+		
 	}
 
 	.input {
@@ -337,6 +368,106 @@ img {
 	.button {
 		display: block;
 		margin: 15px auto 0 auto;
+	}
+
+	&-more {
+		.modal-content {
+			width: 950px;
+			display: flex;
+			flex-flow: row-reverse;
+			font-size: 14px;
+			line-height: 22px;
+		}
+
+		.price {
+			color: $accent;
+			font-size: 17px;
+			font-weight: 900;
+		}
+
+		.input {
+			border-color: #000;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+
+			&::-webkit-input-placeholder {
+				color: #a5a7ac;
+				opacity: 1;
+			}
+			
+			&::-moz-placeholder {
+				color: #a5a7ac;
+				opacity: 1;
+			}
+			
+			&:-ms-input-placeholder {
+				color: #a5a7ac;
+				opacity: 1;
+			}
+		}
+
+		.selectize-control.single {
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+
+			.selectize-input {
+				border-color: #000;
+
+			}
+		} 
+
+		&-left {
+			width: 40%;
+			flex-shrink: 0;
+			margin-right: 30px;
+		}
+
+		&-image {
+			border: 1px solid rgb(226, 228, 235);
+			margin-bottom: 20px;
+			padding: 30px 10px;
+			text-align: center;
+		}
+
+		&-row {
+			display: flex;
+			margin-bottom: 20px;
+		}
+
+		&-title {
+			font-family: Comforta;
+			font-weight: bold;
+			text-decoration: underline;
+			font-size: 20px;		
+			color: $accent;	
+			margin-bottom: 25px;
+		}
+		
+		&-form {
+			text-align: center;
+			border: 1px solid $accent;
+			padding: 20px 10px;
+			width: 250px;
+			flex-shrink: 0;
+			margin-left: 15px;
+
+			&-title {
+				font-family: Comforta;
+				font-weight: bold;
+				font-size: 18px;
+				line-height: 24px;
+				margin-bottom: 10px;
+			}
+		}
+
+		&-info {
+			border: 1px solid $accent;
+			margin-top: 30px;
+			padding: 10px 20px;
+		}
 	}
 }
 
