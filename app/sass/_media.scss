@@ -197,23 +197,6 @@
 	}
 }
 
-@media only screen and (max-width : 550px) {
-	.modal-more {
-		.modal-content {
-			display: block;
-		}
-
-		&-left {
-			width: 100%;
-			margin: 30px 0 0;
-		}
-
-		&-title {
-			text-align: center;
-		}
-	}
-}
-
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
 
@@ -249,6 +232,8 @@
 		}
 
 		&-reason {
+			background-image: none !important;
+
 			&-block {
 				background: none;
 				box-shadow: none;
@@ -287,6 +272,67 @@
 }
 	/**/
 
+@media only screen and (max-width : 550px) {
+	.modal-more {
+		.modal-content {
+			display: block;
+		}
+
+		&-left {
+			width: 100%;
+			margin: 30px 0 0;
+		}
+
+		&-title {
+			text-align: center;
+		}
+	}
+
+	.section {
+		&-title {
+			&-shadow {
+				display: none;
+			}
+		}
+
+		&-text {
+			display: none;
+		}
+
+		&-main {
+			// background-size: contain;
+			background-position: 38% 50%;
+		}
+
+		&-reviews {
+			display: none;
+		}
+
+		&-numbers {			
+			display: none;
+		}
+
+		&-team {
+			display: none;
+		}
+
+		&-matrastab {
+			display: block;
+		}
+
+		&.matras {
+			padding-top: 20px;
+			
+			&.hidden {
+				display: none;
+			}
+
+			.section-title {
+				display: none;
+			}
+		}
+	}
+}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px) {
@@ -322,6 +368,11 @@
 			}
 		}
 
+		&-main {
+			// background-size: contain;
+			background-position: 38% 50%;
+		}
+
 		&-reason {
 			&-title {
 				font-size: 30px;
@@ -329,6 +380,9 @@
 					font-size: 25px;
 				}
 			}
+		}
+
+		&-reviews {
 		}
 
 		&-numbers {			
@@ -340,6 +394,7 @@
 				}
 			}
 		}
+
 	}
 }
 	/**/

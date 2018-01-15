@@ -18,6 +18,12 @@ $(function() {
         $(".section-mix .item").equalHeights();
         $(".section-comfort .item").equalHeights();
 
+        $(".section-optima").addClass('hidden');
+        $(".section-mono").addClass('hidden');
+        $(".section-premium").addClass('hidden');
+        $(".section-mix").addClass('hidden');
+        $(".section-comfort").addClass('hidden');
+
         $(".aksessuar").equalHeights();
     });
 
@@ -138,6 +144,25 @@ $(function() {
             $(this).removeClass('error');
         }
     });    
+
+    var $tabs = $(".tab"),
+        $matras = $(".matras");
+
+    $tabs.click(function() {
+        var $this = $(this);
+        var id = $this.data('id');
+        
+        $tabs.removeClass('active');
+        $this.addClass('active');
+
+        $matras.addClass('hidden');
+        $matras.each(function(i, item) {
+            $item = $(item);
+            if($item.data('id') == id) {
+                $item.removeClass('hidden');
+            }
+        });
+    });
 
     $("#carousel-team").owlCarousel({
         nav: true,

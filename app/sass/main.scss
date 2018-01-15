@@ -279,6 +279,27 @@ body {
 		}
 	}
 
+	&-matrastab {
+		display: none;
+
+		.tab {
+			background-color: rgb(225, 228, 235);
+			outline: 0;
+			border: 0;
+			border-radius: 15px;
+			padding: 5px 15px;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 12px;
+			margin: 10px 5px;
+			cursor: pointer;
+
+			&.active {
+				color: $accent;
+			}
+		}
+	}
+
 	&-reason {
 		text-align: left;
 		background-size: auto;
