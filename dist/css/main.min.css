@@ -224,14 +224,14 @@
 
 @font-face {
   font-family: "Montserrat";
-  font-weight: "bold";
+  font-weight: bold;
   font-style: normal;
   src: url("../fonts/Montserrat/Bold/Montserrat-Bold.eot");
   src: url("../fonts/Montserrat/Bold/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Bold/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat/Bold/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat/Bold/Montserrat-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Montserrat";
-  font-weight: "bold";
+  font-weight: bold;
   font-style: italic;
   src: url("../fonts/Montserrat/BoldItalic/Montserrat-BoldItalic.eot");
   src: url("../fonts/Montserrat/BoldItalic/Montserrat-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/BoldItalic/Montserrat-BoldItalic.woff") format("woff"), url("../fonts/Montserrat/BoldItalic/Montserrat-BoldItalic.woff2") format("woff2"), url("../fonts/Montserrat/BoldItalic/Montserrat-BoldItalic.ttf") format("truetype"); }
@@ -350,14 +350,14 @@
 
 @font-face {
   font-family: "MontserratAlternates";
-  font-weight: "bold";
+  font-weight: bold;
   font-style: normal;
   src: url("../fonts/MontserratAlternates/Bold/MontserratAlternates-Bold.eot");
   src: url("../fonts/MontserratAlternates/Bold/MontserratAlternates-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratAlternates/Bold/MontserratAlternates-Bold.woff") format("woff"), url("../fonts/MontserratAlternates/Bold/MontserratAlternates-Bold.woff2") format("woff2"), url("../fonts/MontserratAlternates/Bold/MontserratAlternates-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: "MontserratAlternates";
-  font-weight: "bold";
+  font-weight: bold;
   font-style: italic;
   src: url("../fonts/MontserratAlternates/BoldItalic/MontserratAlternates-BoldItalic.eot");
   src: url("../fonts/MontserratAlternates/BoldItalic/MontserratAlternates-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratAlternates/BoldItalic/MontserratAlternates-BoldItalic.woff") format("woff"), url("../fonts/MontserratAlternates/BoldItalic/MontserratAlternates-BoldItalic.woff2") format("woff2"), url("../fonts/MontserratAlternates/BoldItalic/MontserratAlternates-BoldItalic.ttf") format("truetype"); }
