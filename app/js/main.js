@@ -134,40 +134,6 @@ $(function() {
         }
     });    
 
-    var teamSettings = {
-        nav: true,
-        dots: false,
-        loop: true,
-        smartSpeed: 500,
-        margin: 10,
-        navText: ['', ''],
-        onChanged: function(e) {
-            // setTimeout(function() {
-            //     $(".carousel-team .owl-item").removeClass("scale-1 scale-2 scale-3 s-0 s-4");
-            //     var items = $(".carousel-team .owl-item.active");
-            //     if(items.length == 5) {
-            //         items.each(function(i, item) {
-            //             if(i == 0 || i == 4) $(item).addClass("scale-1 s-"+i)                        
-            //             if(i == 1 || i == 3) $(item).addClass("scale-2");
-            //             else if(i == 2) $(item).addClass("scale-3");                        
-            //         });
-            //     } 
-            //     else if(items.length == 3) {
-            //         items.each(function(i, item) {
-            //             if(i == 0 || i == 2) $(item).addClass("scale-2");
-            //             else $(item).addClass("scale-3");                        
-            //         });
-            //     }
-            // }, 20);
-        },
-        responsive: {
-            0: { items: 1 },
-            768: { items: 2 },        
-            992: { items: 3 },
-            1200: { items: 5 }        
-        },
-    };
-
     $("#carousel-team").owlCarousel({
         nav: true,
         dots: false,
