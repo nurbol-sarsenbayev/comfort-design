@@ -54,7 +54,7 @@
 									<span class="hamburger-inner"></span>
 								</span>
 							</button>
-							<a href="#" class="link modal-open hidden-xss">Заказать звонок</a>
+							<a href="#" class="link modal-open hidden-xss" data-id="request">Заказать звонок</a>
 							<div class="header-phones  hidden-xs hidden-sm">
 								+7 (776) 763-08-36 <br>
 								+7 (700) 763-08-36
@@ -1074,8 +1074,8 @@
 					<div class="col-md-4">
 						<div class="review">
 							<video class="video" controls>
-								<source src="./videos/review-1.mp4" type="video/mp4">
-								<source src="./videos/review-1.ogg" type="video/ogg">
+								<source src="./videos/review-2.mp4" type="video/mp4">
+								<source src="./videos/review-2.ogg" type="video/ogg">
 								Ваш браузер не поддерживает видео. Обновите ваш браузер.
 							</video>
 							<div class="review-author">Иванова Наталья</div>
@@ -1085,8 +1085,8 @@
 					<div class="col-md-4">
 						<div class="review">
 							<video class="video" controls>
-								<source src="./videos/review-1.mp4" type="video/mp4">
-								<source src="./videos/review-1.ogg" type="video/ogg">
+								<source src="./videos/review-3.mp4" type="video/mp4">
+								<source src="./videos/review-3.ogg" type="video/ogg">
 								Ваш браузер не поддерживает видео. Обновите ваш браузер.
 							</video>
 							<div class="review-author">Иванова Наталья</div>
@@ -1498,7 +1498,7 @@
 							+7 (776) 763-08-36 <br>
 							+7 (700) 763-08-36
 						</div>							
-						<a href="#" class="link modal-open">Заказать звонок</a>
+						<a href="#" class="link modal-open" data-id="request">Заказать звонок</a>
 					</div>
 				</div>
 			</div>
@@ -1533,7 +1533,7 @@
 						<input name="Номер" type="tel" class="input phone" placeholder="Введите номер">
 						<input name="Нестандартный" type="text" class="input" placeholder="Нестандартный размер">
 
-						<button class="button">Отправить заявку</button>
+						<button class="button modal-submit">Отправить заявку</button>
 					</div>
 				</div>
 
@@ -1563,6 +1563,24 @@
 				<p><b>Нагрузка на сп. место:</b> до 70 кг</p>
 				<p><b>Цена за 1м2:</b> <span class="price">8 600 тенге</span></p>
 			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="request">
+		<div class="modal-content">
+			<i class="modal-close"></i>
+			<h4 class="modal-title">Оставьте заявку на бесплатную консультацию специалиста</h4>
+
+			<input class="input" type="text" placeholder="Введите имя">
+			<input class="input phone" type="tel" placeholder="Введите телефон*">
+			<input type="button" class="button modal-submit" value="Отправить">
+		</div>
+	</div>
+
+	<div class="modal" id="thanks">
+		<div class="modal-content">
+			<i class="modal-close"></i>
+			<h4 class="modal-title">Спасибо за заявку. Мы с вами свяжимся.</h4>
 		</div>
 	</div>
 	

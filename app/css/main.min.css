@@ -631,7 +631,7 @@ img {
     border-style: solid;
     -webkit-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.26);
             box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.26);
-    width: 800px;
+    width: 500px;
     max-width: 100%;
     max-height: 100vh;
     overflow: auto;
@@ -683,20 +683,27 @@ img {
     margin-right: auto;
     display: block; }
     .modal-more .input::-webkit-input-placeholder {
-      color: #a5a7ac;
-      opacity: 1; }
+      color: #a5a7ac; }
     .modal-more .input::-moz-placeholder {
-      color: #a5a7ac;
-      opacity: 1; }
+      color: #a5a7ac; }
     .modal-more .input:-ms-input-placeholder {
-      color: #a5a7ac;
-      opacity: 1; }
+      color: #a5a7ac; }
+    .modal-more .input.error::-webkit-input-placeholder {
+      color: red; }
+    .modal-more .input.error::-moz-placeholder {
+      color: red; }
+    .modal-more .input.error:-ms-input-placeholder {
+      color: red; }
   .modal-more .selectize-control.single {
     width: 80%;
     margin-left: auto;
     margin-right: auto; }
     .modal-more .selectize-control.single .selectize-input {
       border-color: #000; }
+      .modal-more .selectize-control.single .selectize-input input {
+        color: #a5a7ac; }
+      .modal-more .selectize-control.single .selectize-input .item {
+        color: #4a4a4a; }
   .modal-more-left {
     width: 40%;
     -webkit-flex-shrink: 0;

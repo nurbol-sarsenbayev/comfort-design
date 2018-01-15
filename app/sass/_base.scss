@@ -329,7 +329,7 @@ img {
 		border-color: $blue;
 		border-style: solid;
 		box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.26);
-		width: 800px;
+		width: 500px;
 		max-width: 100%;
 		max-height: 100vh;
 		overflow: auto;
@@ -394,17 +394,26 @@ img {
 
 			&::-webkit-input-placeholder {
 				color: #a5a7ac;
-				opacity: 1;
 			}
 			
 			&::-moz-placeholder {
 				color: #a5a7ac;
-				opacity: 1;
 			}
 			
 			&:-ms-input-placeholder {
 				color: #a5a7ac;
-				opacity: 1;
+			}
+
+			&.error::-webkit-input-placeholder {
+				color: red;
+			}
+			
+			&.error::-moz-placeholder {
+				color: red;
+			}
+			
+			&.error:-ms-input-placeholder {
+				color: red;
 			}
 		}
 
@@ -416,6 +425,13 @@ img {
 			.selectize-input {
 				border-color: #000;
 
+				input {
+					color: #a5a7ac;
+				}
+
+				.item {
+					color: $default_text_color;
+				}
 			}
 		} 
 
