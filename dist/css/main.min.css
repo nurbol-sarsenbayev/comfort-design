@@ -435,8 +435,8 @@ img {
 .button {
   background-image: -webkit-linear-gradient(3deg, #58bdeb 0%, #289dd2 100%);
   background-image: -ms-linear-gradient(3deg, #58bdeb 0%, #289dd2 100%);
-  -webkit-box-shadow: 0px 14px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 14px 16px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 14px 16px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 14px 16px 0px rgba(0, 0, 0, 0.1);
   -webkit-border-radius: 25px;
           border-radius: 25px;
   color: #fff;
@@ -626,9 +626,6 @@ img {
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     background-color: #fff;
-    border-width: 4px;
-    border-color: #0093d0;
-    border-style: solid;
     -webkit-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.26);
             box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.26);
     width: 500px;
@@ -802,7 +799,16 @@ img {
   border: 1px solid #ebebeb;
   background-color: #f7f7f7;
   padding: 20px 30px 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column; }
   .item-title {
     font-family: Comforta;
     font-weight: bold;
@@ -813,7 +819,11 @@ img {
     margin-bottom: 30px; }
   .item-content {
     margin-bottom: 25px;
-    text-align: left; }
+    text-align: left;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
     .item-content b {
       font-weight: 600; }
     .item-content-row {
@@ -1048,6 +1058,22 @@ body {
       background-color: rgba(63, 172, 222, 0.7); }
   .section-why .section-title {
     margin-bottom: 65px; }
+  .section-matrastab {
+    display: none; }
+    .section-matrastab .tab {
+      background-color: #e1e4eb;
+      outline: 0;
+      border: 0;
+      -webkit-border-radius: 15px;
+              border-radius: 15px;
+      padding: 5px 15px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 12px;
+      margin: 10px 5px;
+      cursor: pointer; }
+      .section-matrastab .tab.active {
+        color: #3facde; }
   .section-reason {
     text-align: left;
     -webkit-background-size: auto auto;
@@ -1500,15 +1526,6 @@ body {
     margin-left: 0;
     width: 100%; } }
 
-@media only screen and (max-width: 550px) {
-  .modal-more .modal-content {
-    display: block; }
-  .modal-more-left {
-    width: 100%;
-    margin: 30px 0 0; }
-  .modal-more-title {
-    text-align: center; } }
-
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
   .button {
@@ -1524,16 +1541,18 @@ body {
       background-image: none; }
   .section-main .block {
     margin-top: 100px; }
-  .section-reason-block {
-    background: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    padding: 0;
-    max-width: none;
-    width: 100%; }
-  .section-reason .reason {
-    height: auto;
-    margin-bottom: 30px; }
+  .section-reason {
+    background-image: none !important; }
+    .section-reason-block {
+      background: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      padding: 0;
+      max-width: none;
+      width: 100%; }
+    .section-reason .reason {
+      height: auto;
+      margin-bottom: 30px; }
   .section-order .order-line {
     display: none; }
   .footer-container {
@@ -1544,6 +1563,35 @@ body {
     display: block; } }
 
 /**/
+@media only screen and (max-width: 550px) {
+  .modal-more .modal-content {
+    display: block; }
+  .modal-more-left {
+    width: 100%;
+    margin: 30px 0 0; }
+  .modal-more-title {
+    text-align: center; }
+  .section-title-shadow {
+    display: none; }
+  .section-text {
+    display: none; }
+  .section-main {
+    background-position: 38% 50%; }
+  .section-reviews {
+    display: none; }
+  .section-numbers {
+    display: none; }
+  .section-team {
+    display: none; }
+  .section-matrastab {
+    display: block; }
+  .section.matras {
+    padding-top: 20px; }
+    .section.matras.hidden {
+      display: none; }
+    .section.matras .section-title {
+      display: none; } }
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 479px) {
   .col-xxs-12 {
@@ -1562,6 +1610,8 @@ body {
     .section-title-shadow {
       top: -15px;
       font-size: 36px; }
+  .section-main {
+    background-position: 38% 50%; }
   .section-reason-title {
     font-size: 30px; }
     .section-reason-title span {
