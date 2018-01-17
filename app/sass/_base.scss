@@ -582,3 +582,51 @@ img {
 
 	}
 }
+
+.mobtel{
+    position: fixed;
+    right: 15px;
+    bottom: 60px;
+    display: none;
+	z-index: 999;
+
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 9999px;
+
+}
+
+  
+  .whatsapp{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: auto;
+    margin: auto;
+    background-color: #2DB642;
+    padding: 13px 30px;
+    color: #fff;
+    text-decoration: none;
+    z-index: 999;
+    font-size: 16px;
+}
+
+.whatsapp img{
+    margin-right: 10px;
+    height: 23px;
+    width: auto;
+}
+
+
+@media (max-width: 480px){
+    .mobtel{
+        display: block;
+    }
+    .whatsapp{
+        display: block;
+    }
+}

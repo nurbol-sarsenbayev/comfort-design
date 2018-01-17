@@ -834,6 +834,44 @@ img {
     .item-content-col:first-child {
       margin-right: 5px; }
 
+.mobtel {
+  position: fixed;
+  right: 15px;
+  bottom: 60px;
+  display: none;
+  z-index: 999;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 9999px;
+          border-radius: 9999px; }
+
+.whatsapp {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: auto;
+  margin: auto;
+  background-color: #2DB642;
+  padding: 13px 30px;
+  color: #fff;
+  text-decoration: none;
+  z-index: 999;
+  font-size: 16px; }
+
+.whatsapp img {
+  margin-right: 10px;
+  height: 23px;
+  width: auto; }
+
+@media (max-width: 480px) {
+  .mobtel {
+    display: block; }
+  .whatsapp {
+    display: block; } }
+
 html, body {
   height: 100%;
   margin: 0; }
@@ -856,7 +894,8 @@ body {
   right: 0;
   bottom: 0;
   background-color: #222;
-  z-index: 100; }
+  z-index: 100;
+  display: none; }
   .preloader .fa {
     position: absolute;
     top: 50%;

@@ -8,7 +8,7 @@ $(function() {
     var $loader = $(".preloader");
 
     $wnd.on('load', function() {        
-        $loader.delay(0).fadeOut('slow');    
+        // $loader.delay(0).fadeOut('slow');    
         
         $(".section-why .rect").equalHeights();
         $(".section-standart .item").equalHeights();
@@ -127,13 +127,23 @@ $(function() {
 
     $(".modal-submit").click(function(e) {
         e.preventDefault();
-        var $phone = $(this).siblings('.phone');
+        
+        var $form = $(this).closest('form');
+        var $phone = $form.find('.phone');
 
         if($phone.length && !$phone.val()) {
             $phone.addClass('error');
         } else {
             $phone.removeClass('error');
-            $phone.val('');
+
+            $.ajax({
+                type: "POST",
+                url: "/mail.php",
+                data: $form.serialize()
+            }).done(function() {
+                $form[0].reset();
+            });
+
             $(this).closest('.modal').fadeOut(500);
             $thanks.fadeIn(500);
         }
