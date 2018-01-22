@@ -669,7 +669,7 @@ img {
             flex-flow: row-reverse;
     font-size: 14px;
     line-height: 22px; }
-  .modal-more .price {
+  .modal-more-price {
     color: #3facde;
     font-size: 17px;
     font-weight: 900; }
