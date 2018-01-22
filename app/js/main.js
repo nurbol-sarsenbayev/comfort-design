@@ -99,9 +99,31 @@ $(function() {
 
     $(".modal-open").click(function() {
         var id = $(this).data('id');
+
+        if(id == 'matras-modal') {
+            var type = $(this).data('type');
+            var index = $(this).data('index');
+            openMatras(type, index);
+        }
+
         $('#'+id).fadeIn(500);
         return false;
     });
+
+    var $mmatras = $("#matras-modal");
+    var props = ['title', 'layer', 'height', 'garranty', 'weight', 'price'];
+
+    function openMatras(type, index) {
+        var item = data[type]['items'][index];
+        var imgSrc = "./img/" + type + (item['key'] ? "-" + item['key'] : "") + ".png";
+
+        $mmatras.find(".modal-more-image img").attr("src", imgSrc);
+        $mmatras.find(".modal-more-content").html(data[type]['content']);
+
+        for(var i = 0; i < props.length; i++) {
+            $mmatras.find(".modal-more-"+props[i]).html(item[props[i]]);
+        }
+    }
 
     $(".modal").click(function() {
         $(this).fadeOut(500);        

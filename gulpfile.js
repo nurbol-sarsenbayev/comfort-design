@@ -18,7 +18,8 @@ var gulp           = require('gulp'),
 
 gulp.task('main-js', function() {
     return gulp.src([
-        'app/js/main.js',     
+        'app/js/data.js',
+        'app/js/main.js',             
     ])
     .pipe(concat('main.min.js'))
     // .pipe(uglify()) // Минифицирует js
@@ -66,7 +67,7 @@ gulp.task('sass', function() {
 
 gulp.task('watch', ['sass', 'libs-js', 'main-js', 'browser-sync'], function() {
     gulp.watch('app/sass/**/*.+(sass|scss)', ['sass']);
-    gulp.watch(['app/js/main.js'], ['main-js']);
+    gulp.watch(['app/js/data.js', 'app/js/main.js'], ['main-js']);
     gulp.watch('app/*.html', browserSync.reload);
 });
 
