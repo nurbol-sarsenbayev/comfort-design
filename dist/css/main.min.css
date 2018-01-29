@@ -834,43 +834,50 @@ img {
     .item-content-col:first-child {
       margin-right: 5px; }
 
-.mobtel {
-  position: fixed;
-  right: 15px;
-  bottom: 60px;
-  display: none;
-  z-index: 999;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-border-radius: 9999px;
-          border-radius: 9999px; }
-
-.whatsapp {
-  display: none;
+.on-mobile {
+  background-color: #2DB642;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 97;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
-  top: auto;
-  margin: auto;
-  background-color: #2DB642;
-  padding: 13px 30px;
-  color: #fff;
-  text-decoration: none;
-  z-index: 999;
-  font-size: 16px; }
+  display: none; }
+  .on-mobile a {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 0;
+    font-weight: 300;
+    font-size: 13px; }
+    .on-mobile a .fa {
+      font-size: 25px;
+      display: block;
+      margin-bottom: 5px; }
+    .on-mobile a:first-child:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 10px;
+      bottom: 10px;
+      width: 2px;
+      background-color: #fff; }
 
-.whatsapp img {
-  margin-right: 10px;
-  height: 23px;
-  width: auto; }
-
-@media (max-width: 480px) {
-  .mobtel {
-    display: block; }
-  .whatsapp {
-    display: block; } }
+@media (max-width: 550px) {
+  .on-mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .page-wrapper {
+    padding-bottom: 65px; } }
 
 html, body {
   height: 100%;
@@ -906,7 +913,7 @@ body {
 
 .page-top {
   position: fixed;
-  bottom: 20px;
+  bottom: 75px;
   right: -100px;
   z-index: 99;
   cursor: pointer;
@@ -1578,6 +1585,8 @@ body {
       margin: 15px auto 0 auto; }
     .section-right .block-border, .section-left .block-border {
       background-image: none; }
+  .section:not(.section-main) {
+    padding: 40px 0 50px; }
   .section-main .block {
     margin-top: 100px; }
   .section-reason {
@@ -1603,6 +1612,8 @@ body {
 
 /**/
 @media only screen and (max-width: 550px) {
+  .hidden-550 {
+    display: none; }
   .modal-more .modal-content {
     display: block; }
   .modal-more-left {
