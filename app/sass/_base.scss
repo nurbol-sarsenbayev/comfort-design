@@ -583,6 +583,44 @@ img {
 	}
 }
 
+.on-mobile {
+    background-color: #2DB642;
+	position: fixed;
+    bottom: 0;
+    left: 0;
+	right: 0;
+	z-index: 99;
+	display: flex;
+	text-align: center;
+	// position: relative;
+
+	a {		
+		flex-grow: 1;
+		color: #ffffff;
+		text-decoration: none;
+		padding: 20px 0;
+		font-weight: 300;
+
+		.fa {
+			font-size: 30px;
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		&:first-child {
+			&:after {
+				content: '';
+				position: absolute;
+				left: 50%;
+				top: 10px;
+				bottom: 10px;
+				width: 2px;
+				background-color: #fff;
+			}
+		}
+	}
+}
+
 .mobtel{
     position: fixed;
     right: 15px;

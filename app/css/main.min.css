@@ -834,6 +834,40 @@ img {
     .item-content-col:first-child {
       margin-right: 5px; }
 
+.on-mobile {
+  background-color: #2DB642;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center; }
+  .on-mobile a {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px 0;
+    font-weight: 300; }
+    .on-mobile a .fa {
+      font-size: 30px;
+      display: block;
+      margin-bottom: 10px; }
+    .on-mobile a:first-child:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 10px;
+      bottom: 10px;
+      width: 2px;
+      background-color: #fff; }
+
 .mobtel {
   position: fixed;
   right: 15px;
