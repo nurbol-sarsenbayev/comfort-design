@@ -10,17 +10,17 @@ var data = {
                 height: "17-18 см.",
                 garranty: "6 месяцев",
                 weight: "До 70 кг",
-                price: "7800"
+                price: "8 600"
             },
             {
                 title: "Standart-2",
                 key: "2",                
                 property: "Средне-жёсткий",
                 layer: '<br> 1 слой: ткань — вискоза. <br> 2 слой: пенополиуритан (2 см). <br> 3 слой: термовойлок 1 слой (0,5 см). <br> 4 слой: "боннель" 14 см (250 за 1 м<sup>2</sup>). <br> 5 слой: термовойлок 1 слой (0,5 см). <br> 6 слой: пенополиуритан (2 см). <br> 7 слой: блок ППУ по периметру (4 см). <br> 8 слой: ткань — вискоза.',
-                height: "17-18 см.",
+                height: "19-20 см.",
                 garranty: "6 месяцев",
                 weight: "До 70 кг",
-                price: "7800"
+                price: "9 900"
             },
             {
                 title: "Standart-3",
@@ -29,8 +29,8 @@ var data = {
                 layer: '<br> 1 слой: ткань — вискоза. <br> 2 слой: кокосовая койра (1 см). <br> 3 слой: термовойлок 1 слой (0,5 см). <br> 4 слой: "боннель" 14 см (250 за 1 м<sup>2</sup>). <br> 5 слой: термовойлок 1 слой (0,5 см). <br> 6 слой: кокосовая койра (1 см). <br> 7 слой: блок ППУ по периметру (4 см). <br> 8 слой: ткань — вискоза.',
                 height: "17-18 см.",
                 garranty: "6 месяцев",
-                weight: "До 70 кг",
-                price: "7800"
+                weight: "До 80 кг",
+                price: "14 200"
             },
             {
                 title: "Standart-Best",
@@ -40,7 +40,7 @@ var data = {
                 height: "17-18 см.",
                 garranty: "6 месяцев",
                 weight: "До 70 кг",
-                price: "7800"
+                price: "14 300"
             },
         ]
     }, 
@@ -55,7 +55,7 @@ var data = {
                 height: "19-20 см.",
                 garranty: "12 месяцев",
                 weight: "До 100 кг",
-                price: "11 000"
+                price: "11 800"
             },
             {
                 title: "Optima-1",
@@ -65,7 +65,7 @@ var data = {
                 height: "19-20 см.",
                 garranty: "12 месяцев",
                 weight: "До 100 кг",
-                price: "14 000"
+                price: "15 000"
             },
             {
                 title: "Optima-2",
@@ -75,7 +75,7 @@ var data = {
                 height: "22-24 см.",
                 garranty: "12 месяцев",
                 weight: "До 100 кг",
-                price: "15 000"
+                price: "16 200"
             },
             {
                 title: "Optima-NEW",
@@ -85,7 +85,7 @@ var data = {
                 height: "19-20 см.",
                 garranty: "12 месяцев",
                 weight: "До 100 кг",
-                price: "16 000"
+                price: "17 200"
             },
         ]
     },
@@ -100,7 +100,7 @@ var data = {
                 height: "20-21 см.",
                 garranty: "36 месяцев",
                 weight: "До 140 кг",
-                price: "23 700"
+                price: "25 400"
             },
             {
                 title: "Premium Mix-2",
@@ -110,7 +110,7 @@ var data = {
                 height: "27-28 см.",
                 garranty: "36 месяцев",
                 weight: "До 140 кг",
-                price: "28 800"
+                price: "30 900"
             },
             {
                 title: "Premium Mix-3",
@@ -120,7 +120,7 @@ var data = {
                 height: "26-27 см.",
                 garranty: "36 месяцев",
                 weight: "До 140 кг",
-                price: "35 800"
+                price: "38 400"
             },
             {
                 title: "Premium Mix-4",
@@ -130,27 +130,27 @@ var data = {
                 height: "20-21 см.",
                 garranty: "36 месяцев",
                 weight: "До 140 кг",
-                price: "34 000"
+                price: "36 400"
             },
             {
                 title: "Premium Mix-5",
                 key: "5",
                 property: "Мягкий/Средне-мягкий",
                 layer: '<br> 1 слой: ткань – вискоза. <br> 2 слой: пенополиуритан (латекс 2 см). <br> 3 слой: пенополиуритан (эластик 4 см). <br> 4 слой: термовойлок 1 слой (0,5 см). <br> 5 слой: НПБ 14 см (250-500 за 1 м²). <br> 6 слой: термовойлок 1 слой (0,5 см). <br> 7 слой: кокосовая койра (1 см). <br> 8 слой: пенополиуритан (латекс 2 см). <br> 9 слой: ткань – вискоза',
-                height: "23-24 см.",
+                height: "20-21 см.",
                 garranty: "36 месяцев",
                 weight: "До 140 кг",
-                price: "33 500"
+                price: "34 500"
             },
             {
                 title: "Premium Mix-6",
                 key: "6",
                 property: "Жёсткий/Средне-жёсткий",
                 layer: '<br> 1 слой: ткань – вискоза. <br> 2 слой: кокосовая койра (3 см). <br> 3 слой: термовойлок 1 слой (0,5 см). <br> 4 слой: НПБ 14 см (250-500 за 1 м²). <br> 5 слой: термовойлок 1 слой (0,5 см). <br> 6 слой: кокосовая койра (1 см). <br> 7 слой: пенополиуритан (2 см). <br> 8 слой: ткань – вискоза.',
-                height: "21-22 см.",
+                height: "20-21 см.",
                 garranty: "36 месяцев",
                 weight: "До 140 кг",
-                price: "32 200"
+                price: "37 500"
             },
         ]
     },
@@ -165,7 +165,7 @@ var data = {
                 height: "18-19 см.",
                 garranty: "36 месяцев",
                 weight: "До 110 кг",
-                price: "14 500"
+                price: "15 600"
             },
             {
                 title: "Premium-2",
@@ -175,7 +175,7 @@ var data = {
                 height: "17-18 см.",
                 garranty: "36 месяцев",
                 weight: "До 120 кг",
-                price: "18 000"
+                price: "19 300"
             },
             {
                 title: "Premium-3",
@@ -185,7 +185,7 @@ var data = {
                 height: "18-19 см.",
                 garranty: "36 месяцев",
                 weight: "До 120 кг",
-                price: "18 000"
+                price: "23 600"
             },
             {
                 title: "Premium-4 NEW",
@@ -195,7 +195,7 @@ var data = {
                 height: "19-20 см.",
                 garranty: "36 месяцев",
                 weight: "До 120 кг",
-                price: "21 500"
+                price: "23 200"
             },
             {
                 title: "Premium-5",
@@ -205,7 +205,7 @@ var data = {
                 height: "19-20 см.",
                 garranty: "36 месяцев",
                 weight: "До 120 кг",
-                price: "23 800"
+                price: "25 500"
             },
             {
                 title: "Premium-6",
@@ -215,7 +215,7 @@ var data = {
                 height: "19-20 см.",
                 garranty: "36 месяцев",
                 weight: "До 110 кг",
-                price: "27 000"
+                price: "28 900"
             },
             {
                 title: "Premium-7 NEW",
@@ -250,7 +250,7 @@ var data = {
                 height: "17-18 см.",
                 garranty: "36 месяцев",
                 weight: "До 90 кг",
-                price: "12 500"
+                price: "13 500"
             },
             {
                 title: "Mono-2",
@@ -260,7 +260,7 @@ var data = {
                 height: "19-20 см.",
                 garranty: "36 месяцев",
                 weight: "До 90 кг",
-                price: "13 500"
+                price: "14 600"
             },
             {
                 title: "Mono-3",
@@ -270,7 +270,7 @@ var data = {
                 height: "18-19 см.",
                 garranty: "36 месяцев",
                 weight: "До 90 кг",
-                price: "18 500"
+                price: "20 000"
             },
             {
                 title: "Mono ЭКО",
@@ -280,7 +280,7 @@ var data = {
                 height: "13-14 см.",
                 garranty: "36 месяцев",
                 weight: "До 120 кг",
-                price: "30 000"
+                price: "32 400"
             },
         ]
     },
@@ -295,7 +295,7 @@ var data = {
                 height: "13-14 см.",
                 garranty: "12 месяцев",
                 weight: "До 50 кг",
-                price: "11 000"
+                price: "11 800"
             },
             {
                 title: "Baby Comfort-2",
@@ -305,7 +305,7 @@ var data = {
                 height: "11-12 см.",
                 garranty: "12 месяцев",
                 weight: "До 60 кг",
-                price: "16 000"
+                price: "17 200"
             },
             {
                 title: "Baby Comfort-Coco",
@@ -315,7 +315,7 @@ var data = {
                 height: "6-7 см.",
                 garranty: "12 месяцев",
                 weight: "До 50 кг",
-                price: "15 200"
+                price: "25 200"
             },
             {
                 title: "Baby Comfort-Hollcon+coco",
@@ -325,7 +325,7 @@ var data = {
                 height: "9-10 см.",
                 garranty: "12 месяцев",
                 weight: "До 40 кг",
-                price: "18 500"
+                price: "19 800"
             },
         ]
     },
